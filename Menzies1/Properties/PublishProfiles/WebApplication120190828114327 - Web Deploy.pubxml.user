@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3UqmgSVWxEyU+OZA7Vg2zwAAAAACAAAAAAAQZgAAAAEAACAAAABXdeNtiZU4H8H6Vcah/ErAhPGbYoRdHdNAXwj3oiFsSwAAAAAOgAAAAAIAACAAAACmZ0dfuKWP40rTzS38LFpZfFZZ1GPHilOTPMt+ZHKfN4AAAAD25wKK/q7rdsTkm9+yQyNpWlIuecCsEWp97PfJ4zx78/pyRU23RFVWBbyx6zwmcyPyeDbRHPPNLQATyJ7zF2a82lYLuB808xTSz/jau3tkOUC5v0mVchEHbmg0DZN5CHmvTvQ2xab3D7f5HI9kfnt8GUSMv8lzrafVjrud2RrwkkAAAAAAfSA6K73e/GftWWGYr1K/L+b9KhzA2/sUjvjZ0LHGhA5qAtIRngrruuNTYu9u/enqzzX1AFvdUpVXqiGsvvn/</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:jacobserver.database.windows.net,1433%3bInitial Catalog=WebApplication120190828114327_db%3bUser Id=jacob%40jacobserver%3bPassword=admin123!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Menzies1.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:jacobserver.database.windows.net,1433%3bInitial Catalog=WebApplication120190828114327_db%3bUser Id=jacob%40jacobserver%3bPassword=admin123!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

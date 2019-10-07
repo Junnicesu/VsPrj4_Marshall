@@ -1,0 +1,56 @@
+﻿@model Menzies1.Controllers.EnquiryForm
+
+@{
+    ViewData["Title"] = "Contact";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<address>
+    222 Great North Road, Winton. <br />
+    P O Box 50, Winton 9741, New Zealand <br />
+    <abbr title="Phone">P:</abbr>
+    03 2367068
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Tom.Marshall@student.sit.ac.nz">Tomas.Marshall@student.sit.ac.nz</a><br />
+    <strong>Marketing:</strong> <a href="mailto:menzies.marshall@xtra.co.nz">menzies.marshall@xtra.co.nz</a>
+</address>
+
+<td class="wsite-multicol-col" style="width:49.94324631101%; padding:0 15px;">
+							
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CustomerQuiry">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+			<div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Enquiry" class="control-label"></label>
+                <textarea asp-for="Enquiry" class="form-control" >
+                </textarea>
+                <span asp-validation-for="Enquiry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+ 
